@@ -1,0 +1,4 @@
+module Mux_8x1 (out,in,sel);
+output reg out;
+input [2:0] sel;
+input [7:0] in;

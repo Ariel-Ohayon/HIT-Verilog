@@ -1,0 +1,11 @@
+|sys4
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+in[0] => out1.DATAA
+in[1] => out1.DATAB
+in[2] => out2.DATAA
+in[3] => out2.DATAB
+sel[0] => out1.OUTPUTSELECT
+sel[0] => out2.OUTPUTSELECT
+sel[1] => out.OUTPUTSELECT
+
+

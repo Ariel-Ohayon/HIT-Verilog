@@ -1,0 +1,12 @@
+module(out,in,sel);
+output out;
+input [1:0] in;
+input sel;
+
+always @(in,sel)
+if (sel)
+	assign out = in[1];
+else
+	assign out = in[0];
+end
+endmodule

@@ -1,0 +1,4 @@
+module Decoder_3x8(D,A,B,C);
+output [7:0] D;
+input 		 A,B,C;
+

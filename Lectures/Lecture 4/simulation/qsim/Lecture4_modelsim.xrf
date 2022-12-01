@@ -1,0 +1,12 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/ariel/Desktop/works/HIT/Verilog/Lectures/Lecture 4/mux_2x1.v
+source_file = 1, C:/Users/ariel/Desktop/works/HIT/Verilog/Lectures/Lecture 4/Mux_8x1.v
+source_file = 1, C:/Users/ariel/Desktop/works/HIT/Verilog/Lectures/Lecture 4/Waveform.vwf
+source_file = 1, C:/Users/ariel/Desktop/works/HIT/Verilog/Lectures/Lecture 4/db/Lecture4.cbx.xml
+design_name = mux_2x1
+instance = comp, \out~output , out~output, mux_2x1, 1
+instance = comp, \sel~input , sel~input, mux_2x1, 1
+instance = comp, \in[1]~input , in[1]~input, mux_2x1, 1
+instance = comp, \in[0]~input , in[0]~input, mux_2x1, 1
+instance = comp, \out~0 , out~0, mux_2x1, 1
+instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, mux_2x1, 1

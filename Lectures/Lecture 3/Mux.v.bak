@@ -1,0 +1,8 @@
+module (sel,in1,in2,outpt);
+output outpt;
+input in1,in2;
+input sel;
+
+assign outpt = (sel & in2) | ((not sel) & in1);
+
+endmodule;
