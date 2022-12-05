@@ -1,0 +1,9 @@
+//Behaviorial modeling Design.
+//
+module Decoder3x8_ver1_Behave (D0,D1,D2,D3,D4,D5,D6,D7,A,B,C);
+output D0,D1,D2,D3,D4,D5,D6,D7;
+input  A,B,C;
+//A - MSB, C - LSB
+reg [2:0] in; reg [7:0] out; always @ (A,B,C) begin in = {A,B,C}; case (in) 2d'0: out = "00000001"; 2d'1: out = 
+"00000010"; 2d'2: out = "00000100"; 2d'3: out = "00001000"; 2d'4: out = "00010000"; 2d'5: out = "00100000"; 
+2d'6: out = "01000000"; 2d'7: out = "10000000"; end D0 = out[0]; D0 = out[0]; D0 = out[0]; endmodule

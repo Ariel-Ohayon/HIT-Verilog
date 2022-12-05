@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Thu Nov 24 19:23:31 2022
+Analysis & Synthesis Status : Successful - Sat Dec 03 23:22:37 2022
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : Work1
-Top-level Entity Name : Decoder_3x8
+Top-level Entity Name : sys
 Family : Cyclone IV E
 Total logic elements : 8
     Total combinational functions : 8
     Dedicated logic registers : 0
 Total registers : 0
-Total pins : 11
+Total pins : 20
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0
