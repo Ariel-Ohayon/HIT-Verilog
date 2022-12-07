@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Work1
-Sat Dec 03 23:22:37 2022
+Wed Dec 07 22:56:18 2022
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -42,7 +42,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Dec 03 23:22:37 2022       ;
+; Analysis & Synthesis Status        ; Successful - Wed Dec 07 22:56:18 2022       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Work1                                       ;
 ; Top-level Entity Name              ; sys                                         ;
@@ -258,7 +258,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sat Dec 03 23:22:29 2022
+    Info: Processing started: Wed Dec 07 22:56:09 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Work1 -c Work1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -279,9 +279,9 @@ Info (21057): Implemented 28 device resources after synthesis - the final resour
     Info (21059): Implemented 8 output pins
     Info (21061): Implemented 8 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4752 megabytes
-    Info: Processing ended: Sat Dec 03 23:22:37 2022
-    Info: Elapsed time: 00:00:08
+    Info: Peak virtual memory: 4754 megabytes
+    Info: Processing ended: Wed Dec 07 22:56:18 2022
+    Info: Elapsed time: 00:00:09
     Info: Total CPU time (on all processors): 00:00:18
 
 

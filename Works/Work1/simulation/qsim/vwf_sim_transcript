@@ -7,7 +7,7 @@ Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-A
 
 **** Generating the ModelSim Testbench ****
 
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off Work1 -c Work1 --vector_source="C:/Users/ariel/Desktop/works/HIT/Verilog/Works/Work1/Waveform_Dec3x8_behave.vwf" --testbench_file="C:/Users/ariel/Desktop/works/HIT/Verilog/Works/Work1/simulation/qsim/Waveform_Dec3x8_behave.vwf.vt"
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off Work1 -c Work1 --vector_source="C:/Users/ariel/Desktop/works/HIT/Verilog/Works/Work1/Waveform_sys.vwf" --testbench_file="C:/Users/ariel/Desktop/works/HIT/Verilog/Works/Work1/simulation/qsim/Waveform_sys.vwf.vt"
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -25,8 +25,8 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Sat Dec 03 23:07:42 2022
-Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off Work1 -c Work1 --vector_source=C:/Users/ariel/Desktop/works/HIT/Verilog/Works/Work1/Waveform_Dec3x8_behave.vwf --testbench_file=C:/Users/ariel/Desktop/works/HIT/Verilog/Works/Work1/simulation/qsim/Waveform_Dec3x8_behave.vwf.vt
+    Info: Processing started: Wed Dec 07 23:02:59 2022
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off Work1 -c Work1 --vector_source=C:/Users/ariel/Desktop/works/HIT/Verilog/Works/Work1/Waveform_sys.vwf --testbench_file=C:/Users/ariel/Desktop/works/HIT/Verilog/Works/Work1/simulation/qsim/Waveform_sys.vwf.vt
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
 Completed successfully. 
@@ -53,15 +53,15 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Sat Dec 03 23:07:43 2022
+    Info: Processing started: Wed Dec 07 23:03:00 2022
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/ariel/Desktop/works/HIT/Verilog/Works/Work1/simulation/qsim/ Work1 -c Work1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file Work1.vo in folder "C:/Users/ariel/Desktop/works/HIT/Verilog/Works/Work1/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4639 megabytes
-    Info: Processing ended: Sat Dec 03 23:07:44 2022
+    Info: Processing ended: Wed Dec 07 23:03:01 2022
     Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
 
 Completed successfully. 
 
@@ -80,54 +80,53 @@ Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
 # 10.5b
 
 # do Work1.do
-# ** Warning: (vlib-34) Library already exists at "work".
 
+# ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:07:44 on Dec 03,2022
+# Start time: 23:03:01 on Dec 07,2022
 # vlog -work work Work1.vo 
-# -- Compiling module Decoder3x8_ver1_Behave
+# -- Compiling module sys
 # -- Compiling module hard_block
 # 
 # Top level modules:
-# 	Decoder3x8_ver1_Behave
-# End time: 23:07:44 on Dec 03,2022, Elapsed time: 0:00:00
+# 	sys
+# End time: 23:03:01 on Dec 07,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:07:44 on Dec 03,2022
-# vlog -work work Waveform_Dec3x8_behave.vwf.vt 
-# -- Compiling module Decoder3x8_ver1_Behave_vlg_vec_tst
+# Start time: 23:03:01 on Dec 07,2022
+# vlog -work work Waveform_sys.vwf.vt 
+# -- Compiling module sys_vlg_vec_tst
 # 
 # Top level modules:
-# 	Decoder3x8_ver1_Behave_vlg_vec_tst
-# End time: 23:07:44 on Dec 03,2022, Elapsed time: 0:00:00
+# 	sys_vlg_vec_tst
+# End time: 23:03:01 on Dec 07,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
-# vsim -novopt -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.Decoder3x8_ver1_Behave_vlg_vec_tst 
-# Start time: 23:07:44 on Dec 03,2022
-# Loading work.Decoder3x8_ver1_Behave_vlg_vec_tst
-# Loading work.Decoder3x8_ver1_Behave
+# vsim -novopt -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.sys_vlg_vec_tst 
+# Start time: 23:03:01 on Dec 07,2022
+# Loading work.sys_vlg_vec_tst
+# Loading work.sys
 # Loading work.hard_block
 # Loading cycloneive_ver.cycloneive_io_obuf
 # Loading cycloneive_ver.cycloneive_io_ibuf
 # Loading cycloneive_ver.cycloneive_lcell_comb
 # after#26
-
-# ** Note: $finish    : Waveform_Dec3x8_behave.vwf.vt(62)
-#    Time: 1 us  Iteration: 0  Instance: /Decoder3x8_ver1_Behave_vlg_vec_tst
-# End time: 23:07:45 on Dec 03,2022, Elapsed time: 0:00:01
+# ** Note: $finish    : Waveform_sys.vwf.vt(46)
+#    Time: 1 us  Iteration: 0  Instance: /sys_vlg_vec_tst
+# End time: 23:03:02 on Dec 07,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 
 Completed successfully. 
 
 **** Converting ModelSim VCD to vector waveform ****
 
-Reading C:/Users/ariel/Desktop/works/HIT/Verilog/Works/Work1/Waveform_Dec3x8_behave.vwf...
+Reading C:/Users/ariel/Desktop/works/HIT/Verilog/Works/Work1/Waveform_sys.vwf...
 
 Reading C:/Users/ariel/Desktop/works/HIT/Verilog/Works/Work1/simulation/qsim/Work1.msim.vcd...
 
 Processing channel transitions... 
 
-Writing the resulting VWF to C:/Users/ariel/Desktop/works/HIT/Verilog/Works/Work1/simulation/qsim/Work1_20221203230745.sim.vwf
+Writing the resulting VWF to C:/Users/ariel/Desktop/works/HIT/Verilog/Works/Work1/simulation/qsim/Work1_20221207230302.sim.vwf
 
 Finished VCD to VWF conversion.
 
