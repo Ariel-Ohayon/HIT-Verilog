@@ -1,0 +1,75 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/ariel/Desktop/works/HIT/Verilog/Works/Work2/simulation/qsim
+vALU
+Z1 !s110 1670533827
+!i10b 1
+!s100 Cbgom8fngD^ijCij703[02
+Ik>AAOFfS=a<h5gW3iHJM=2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1670533826
+Z4 8Work2.vo
+Z5 FWork2.vo
+L0 31
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1670533827.000000
+Z8 !s107 Work2.vo|
+Z9 !s90 -work|work|Work2.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+n@a@l@u
+vALU_vlg_vec_tst
+R1
+!i10b 1
+!s100 ;P_7FB2NUM8DeB;>89Z3g2
+IafSGMRNDohlWC:k^3kQ2L2
+R2
+R0
+R3
+8Waveform_ALU.vwf.vt
+FWaveform_ALU.vwf.vt
+L0 29
+R6
+r1
+!s85 0
+31
+R7
+!s107 Waveform_ALU.vwf.vt|
+!s90 -work|work|Waveform_ALU.vwf.vt|
+!i113 1
+R10
+R11
+n@a@l@u_vlg_vec_tst
+vhard_block
+R1
+!i10b 1
+!s100 AbZ43f[Kc68Q_`UJj[I290
+I79kFEBEOJ5IiBh;i`]^ZC0
+R2
+R0
+R3
+R4
+R5
+L0 314
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11

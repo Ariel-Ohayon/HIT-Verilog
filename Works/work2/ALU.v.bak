@@ -1,0 +1,83 @@
+module ALU_1Bit (B,ENB,ENA,A,INVA,F0,F1,Carry_in,Carry_out,Out);
+
+input B,ENB;
+input A,ENA,INVA;
+input F0,F1;
+input Carry_in;
+
+output Carry_out;
+output reg Out;
+
+reg  [3:0] En;
+wire [1:0] F;
+reg  [1:0] FA_Out;
+wire		  sum;
+
+reg sysA;
+reg ResultAnd,ResultOr,ResultNot;
+
+assign F = {F1,F0};
+always @(F0 or F1)
+begin
+case (F)
+2'b00: En = 4'b0001;		// Out = A and B
+2'b01: En = 4'b0010;		// Out = A or  B
+2'b10: En = 4'b0100;		// Out = not B
+2'b11: En = 4'b1000;		// Out = A + B (Arithmetic)
+endcase
+end
+
+always @(En or B or ENB or A or ENA or INVA)
+begin
+
+if (En[3])
+begin
+	if (ENB & ENA)
+	begin
+		if (INVA)
+		begin
+			FA_Out = (~A)+B+Carry_in;
+		end
+		else
+		begin
+			FA_Out = A+B+Carry_in;
+		end
+	end
+end
+else
+begin
+	FA_Out = 2'b00;
+end
+
+end
+
+always @(En or INVA or A or B or ENA or ENB)
+begin
+	
+	if (INVA)
+	begin
+		sysA = ~A;
+	end
+	else
+	begin
+		sysA = A;
+	end
+	
+	if (En[0] & ENA & ENB)
+	begin
+		ResultAnd = A & B;
+	end
+	else if (En[1] & ENA & ENB)
+	begin
+		ResultOr = A | B;
+	end
+	else if (En[2] & ENA & ENB)
+	begin
+		ResultNot = ~B;
+	end
+end
+
+assign sum 		  = FA_Out[0];
+assign Carry_Out = FA_Out[1];
+
+endmodule
